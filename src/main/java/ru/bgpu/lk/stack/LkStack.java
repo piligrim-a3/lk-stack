@@ -26,6 +26,10 @@ public class LkStack <T> {
         return current == 0;
     }
 
+    public boolean isFull() {
+        return current == array.length;
+    }
+
     public int size() {
         return current;
     }
