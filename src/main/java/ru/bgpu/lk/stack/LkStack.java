@@ -6,26 +6,27 @@ public class LkStack <T> {
     private int current;
 
     LkStack(int size) {
-
+        current = 0;
+        array = (T[])(new Object[size]);
     }
 
-    private void push(T value) {
-
+    public void push(T value) {
+        array[current++] = value;
     }
 
     public T peek() {
-        return null;
+        return array[current-1];
     }
 
     public T pull() {
-        return null;
+        return array[--current];
     }
 
     public boolean isEmpty() {
-        return true;
+        return current == 0;
     }
 
     public int size() {
-        return 0;
+        return current;
     }
 }
