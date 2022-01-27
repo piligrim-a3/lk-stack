@@ -17,8 +17,12 @@ public class Main {
 
         String s1 = "{vasja([<(in)>()p])}";
         String s2 = "{(1+1[<()>([)]out])}";
+        String s3 = "{";
+        String s4 = ")}";
         System.out.println(s1+" - "+checkString(s1));
         System.out.println(s2+" - "+checkString(s2));
+        System.out.println(s3+" - "+checkString(s3));
+        System.out.println(s4+" - "+checkString(s4));
     }
 
     public static boolean checkString(String in) {
